@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2517C4141D27A9DE00BAB087 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2517C4131D27A9DE00BAB087 /* AppDelegate.swift */; };
+		2517C4191D27A9DE00BAB087 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2517C4181D27A9DE00BAB087 /* MasterViewController.swift */; };
+		2517C41B1D27A9DE00BAB087 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2517C41A1D27A9DE00BAB087 /* DetailViewController.swift */; };
+		2517C41E1D27A9DE00BAB087 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2517C41C1D27A9DE00BAB087 /* Main.storyboard */; };
+		2517C4201D27A9DE00BAB087 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2517C41F1D27A9DE00BAB087 /* Assets.xcassets */; };
+		2517C4231D27A9DE00BAB087 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2517C4211D27A9DE00BAB087 /* LaunchScreen.storyboard */; };
+		2527E0621D27AB620035999F /* IsbnVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2527E0611D27AB620035999F /* IsbnVC.swift */; };
+		2527E0641D27AB830035999F /* Libro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2527E0631D27AB830035999F /* Libro.swift */; };
+		254372BD1D27C6E000D7AE21 /* Persistencia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 254372BB1D27C6E000D7AE21 /* Persistencia.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2517C4101D27A9DE00BAB087 /* Persistencia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Persistencia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2517C4131D27A9DE00BAB087 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2517C4181D27A9DE00BAB087 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		2517C41A1D27A9DE00BAB087 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		2517C41D1D27A9DE00BAB087 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2517C41F1D27A9DE00BAB087 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2517C4221D27A9DE00BAB087 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2517C4241D27A9DE00BAB087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2527E0611D27AB620035999F /* IsbnVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsbnVC.swift; sourceTree = "<group>"; };
+		2527E0631D27AB830035999F /* Libro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Libro.swift; sourceTree = "<group>"; };
+		254372BC1D27C6E000D7AE21 /* Persistencia.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Persistencia.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2517C40D1D27A9DE00BAB087 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2517C4071D27A9DE00BAB087 = {
+			isa = PBXGroup;
+			children = (
+				2517C4121D27A9DE00BAB087 /* Persistencia */,
+				2517C4111D27A9DE00BAB087 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2517C4111D27A9DE00BAB087 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2517C4101D27A9DE00BAB087 /* Persistencia.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2517C4121D27A9DE00BAB087 /* Persistencia */ = {
+			isa = PBXGroup;
+			children = (
+				2517C4131D27A9DE00BAB087 /* AppDelegate.swift */,
+				2517C4181D27A9DE00BAB087 /* MasterViewController.swift */,
+				2517C41A1D27A9DE00BAB087 /* DetailViewController.swift */,
+				2517C41C1D27A9DE00BAB087 /* Main.storyboard */,
+				2517C41F1D27A9DE00BAB087 /* Assets.xcassets */,
+				2517C4211D27A9DE00BAB087 /* LaunchScreen.storyboard */,
+				2517C4241D27A9DE00BAB087 /* Info.plist */,
+				2527E0611D27AB620035999F /* IsbnVC.swift */,
+				2527E0631D27AB830035999F /* Libro.swift */,
+				254372BB1D27C6E000D7AE21 /* Persistencia.xcdatamodeld */,
+			);
+			path = Persistencia;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2517C40F1D27A9DE00BAB087 /* Persistencia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2517C4271D27A9DE00BAB087 /* Build configuration list for PBXNativeTarget "Persistencia" */;
+			buildPhases = (
+				2517C40C1D27A9DE00BAB087 /* Sources */,
+				2517C40D1D27A9DE00BAB087 /* Frameworks */,
+				2517C40E1D27A9DE00BAB087 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Persistencia;
+			productName = Persistencia;
+			productReference = 2517C4101D27A9DE00BAB087 /* Persistencia.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2517C4081D27A9DE00BAB087 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Timo Siegle";
+				TargetAttributes = {
+					2517C40F1D27A9DE00BAB087 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 2517C40B1D27A9DE00BAB087 /* Build configuration list for PBXProject "Persistencia" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2517C4071D27A9DE00BAB087;
+			productRefGroup = 2517C4111D27A9DE00BAB087 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2517C40F1D27A9DE00BAB087 /* Persistencia */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2517C40E1D27A9DE00BAB087 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2517C4231D27A9DE00BAB087 /* LaunchScreen.storyboard in Resources */,
+				2517C4201D27A9DE00BAB087 /* Assets.xcassets in Resources */,
+				2517C41E1D27A9DE00BAB087 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2517C40C1D27A9DE00BAB087 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2527E0621D27AB620035999F /* IsbnVC.swift in Sources */,
+				2517C4141D27A9DE00BAB087 /* AppDelegate.swift in Sources */,
+				2517C4191D27A9DE00BAB087 /* MasterViewController.swift in Sources */,
+				2527E0641D27AB830035999F /* Libro.swift in Sources */,
+				254372BD1D27C6E000D7AE21 /* Persistencia.xcdatamodeld in Sources */,
+				2517C41B1D27A9DE00BAB087 /* DetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2517C41C1D27A9DE00BAB087 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2517C41D1D27A9DE00BAB087 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2517C4211D27A9DE00BAB087 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2517C4221D27A9DE00BAB087 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2517C4251D27A9DE00BAB087 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2517C4261D27A9DE00BAB087 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2517C4281D27A9DE00BAB087 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Persistencia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ts.Persistencia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2517C4291D27A9DE00BAB087 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Persistencia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ts.Persistencia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2517C40B1D27A9DE00BAB087 /* Build configuration list for PBXProject "Persistencia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2517C4251D27A9DE00BAB087 /* Debug */,
+				2517C4261D27A9DE00BAB087 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2517C4271D27A9DE00BAB087 /* Build configuration list for PBXNativeTarget "Persistencia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2517C4281D27A9DE00BAB087 /* Debug */,
+				2517C4291D27A9DE00BAB087 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		254372BB1D27C6E000D7AE21 /* Persistencia.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				254372BC1D27C6E000D7AE21 /* Persistencia.xcdatamodel */,
+			);
+			currentVersion = 254372BC1D27C6E000D7AE21 /* Persistencia.xcdatamodel */;
+			path = Persistencia.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2517C4081D27A9DE00BAB087 /* Project object */;
+}
