@@ -15,7 +15,7 @@ class IsbnVC: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var input: UITextField!
     
-    var book: Libro!
+    var book: Libro2!
     var bookSource: MasterViewController!
     var contexto: NSManagedObjectContext? = nil
     
@@ -34,7 +34,7 @@ class IsbnVC: UIViewController, UITextFieldDelegate {
         (segue.destinationViewController as! DetailViewController).book = self.book
     }
     
-    func fetchBookDetails(isbn: String) -> Libro? {
+    func fetchBookDetails(isbn: String) -> Libro2? {
         
         var titulo = ""
         var portada = UIImage()
@@ -77,7 +77,7 @@ class IsbnVC: UIViewController, UITextFieldDelegate {
                         }
                     }
                     
-                    return Libro(isbn: isbn, titulo: titulo, autores: autores, imagen: portada)
+                    return Libro2(isbn: isbn, titulo: titulo, autores: autores, imagen: portada)
                 }
             } catch {
                 print("Error info: \(error)")
@@ -97,11 +97,26 @@ class IsbnVC: UIViewController, UITextFieldDelegate {
             } else {
                 if let result = fetchBookDetails(isbn) {
                     
-                    let nuevaLibroEntidad = NSEntityDescription.insertNewObjectForEntityForName("Libro", inManagedObjectContext: contexto!)
-                    nuevaLibroEntidad.setValue(result.isbn, forKey: "isbn")
-                    nuevaLibroEntidad.setValue(result.titulo, forKey: "titulo")
-                    nuevaLibroEntidad.setValue(UIImagePNGRepresentation(result.imagen), forKey: "imagen")
-                    nuevaLibroEntidad.setValue(creaAutoresEntidad(result.autores!), forKey: "tiene")
+                    let nuevaLibro = NSEntityDescription.insertNewObjectForEntityForName("Libro", inManagedObjectContext: contexto!) as! Libro
+                    nuevaLibro.isbn = result.isbn
+                    nuevaLibro.titulo = result.titulo
+                    nuevaLibro.imagen = UIImagePNGRepresentation(result.imagen)
+                    
+                    let autorSet = nuevaLibro.mutableSetValueForKey("tiene")
+                    for autorNombre in result.autores {
+                        
+                        let entityAutor = NSEntityDescription.entityForName("Autor", inManagedObjectContext: self.contexto!)
+                        let autor = NSManagedObject(entity: entityAutor!, insertIntoManagedObjectContext: self.contexto!) as! Autor
+                        autor.nombre = autorNombre
+                        autor.pertenece = nuevaLibro
+                        autorSet.addObject(autor)
+                    }
+                    
+                    do {
+                        try self.contexto?.save()
+                    } catch {
+                        
+                    }
                     
                     self.book = result
                     self.bookSource.books.append(result)
@@ -125,16 +140,5 @@ class IsbnVC: UIViewController, UITextFieldDelegate {
             return false
         }
         return true
-    }
-    
-    func creaAutoresEntidad(autores: [String]) -> Set<NSObject> {
-        
-        var entidades = Set<NSObject>()
-        for autor in autores {
-            let autorEntidad = NSEntityDescription.insertNewObjectForEntityForName("Autor", inManagedObjectContext: self.contexto!)
-            autorEntidad.setValue(autor, forKey: "nombre")
-            entidades.insert(autorEntidad)
-        }
-        return entidades
     }
 }

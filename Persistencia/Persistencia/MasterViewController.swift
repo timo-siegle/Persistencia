@@ -11,17 +11,13 @@ import CoreData
 
 class MasterViewController: UITableViewController {
     
-    var books = [Libro]()
+    var books = [Libro2]()
     var contexto: NSManagedObjectContext? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-    }
-    
-    override func viewWillAppear(animated: Bool) {
         self.contexto = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
-        
         let libroEntidad = NSEntityDescription.entityForName("Libro", inManagedObjectContext: self.contexto!)
         let peticion = libroEntidad?.managedObjectModel.fetchRequestTemplateForName("petLibros")
         do {
@@ -37,11 +33,27 @@ class MasterViewController: UITableViewController {
                     let nombre = autor.valueForKey("nombre") as! String
                     autores.append(nombre)
                 }
-                books.append(Libro(isbn: isbn, titulo: titulo, autores: autores, imagen: imagen!))
+                books.append(Libro2(isbn: isbn, titulo: titulo, autores: autores, imagen: imagen!))
             }
         } catch {
             
         }
+        
+        let autorEntidad = NSEntityDescription.entityForName("Autor", inManagedObjectContext: self.contexto!)
+        let autorPeticion = autorEntidad?.managedObjectModel.fetchRequestTemplateForName("petAutores")
+        do {
+            
+            
+            let autorEntidades = try self.contexto?.executeFetchRequest(autorPeticion!)
+            autorEntidades
+        } catch {
+            
+        }
+        
+        self.navigationItem.leftBarButtonItem = self.editButtonItem()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
         tableView.reloadData()
     }
     

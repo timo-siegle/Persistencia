@@ -13,8 +13,12 @@
 		2517C41E1D27A9DE00BAB087 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2517C41C1D27A9DE00BAB087 /* Main.storyboard */; };
 		2517C4201D27A9DE00BAB087 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2517C41F1D27A9DE00BAB087 /* Assets.xcassets */; };
 		2517C4231D27A9DE00BAB087 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2517C4211D27A9DE00BAB087 /* LaunchScreen.storyboard */; };
+		2526BB681D29140A00B0997E /* Libro+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2526BB641D29140A00B0997E /* Libro+CoreDataProperties.swift */; };
+		2526BB691D29140A00B0997E /* Libro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2526BB651D29140A00B0997E /* Libro.swift */; };
+		2526BB6A1D29140A00B0997E /* Autor+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2526BB661D29140A00B0997E /* Autor+CoreDataProperties.swift */; };
+		2526BB6B1D29140A00B0997E /* Autor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2526BB671D29140A00B0997E /* Autor.swift */; };
 		2527E0621D27AB620035999F /* IsbnVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2527E0611D27AB620035999F /* IsbnVC.swift */; };
-		2527E0641D27AB830035999F /* Libro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2527E0631D27AB830035999F /* Libro.swift */; };
+		2527E0641D27AB830035999F /* Libro2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2527E0631D27AB830035999F /* Libro2.swift */; };
 		254372BD1D27C6E000D7AE21 /* Persistencia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 254372BB1D27C6E000D7AE21 /* Persistencia.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
@@ -27,8 +31,12 @@
 		2517C41F1D27A9DE00BAB087 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2517C4221D27A9DE00BAB087 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2517C4241D27A9DE00BAB087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2526BB641D29140A00B0997E /* Libro+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Libro+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2526BB651D29140A00B0997E /* Libro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Libro.swift; sourceTree = "<group>"; };
+		2526BB661D29140A00B0997E /* Autor+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Autor+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2526BB671D29140A00B0997E /* Autor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Autor.swift; sourceTree = "<group>"; };
 		2527E0611D27AB620035999F /* IsbnVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsbnVC.swift; sourceTree = "<group>"; };
-		2527E0631D27AB830035999F /* Libro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Libro.swift; sourceTree = "<group>"; };
+		2527E0631D27AB830035999F /* Libro2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Libro2.swift; sourceTree = "<group>"; };
 		254372BC1D27C6E000D7AE21 /* Persistencia.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Persistencia.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,6 +70,10 @@
 		2517C4121D27A9DE00BAB087 /* Persistencia */ = {
 			isa = PBXGroup;
 			children = (
+				2526BB641D29140A00B0997E /* Libro+CoreDataProperties.swift */,
+				2526BB651D29140A00B0997E /* Libro.swift */,
+				2526BB661D29140A00B0997E /* Autor+CoreDataProperties.swift */,
+				2526BB671D29140A00B0997E /* Autor.swift */,
 				2517C4131D27A9DE00BAB087 /* AppDelegate.swift */,
 				2517C4181D27A9DE00BAB087 /* MasterViewController.swift */,
 				2517C41A1D27A9DE00BAB087 /* DetailViewController.swift */,
@@ -70,7 +82,7 @@
 				2517C4211D27A9DE00BAB087 /* LaunchScreen.storyboard */,
 				2517C4241D27A9DE00BAB087 /* Info.plist */,
 				2527E0611D27AB620035999F /* IsbnVC.swift */,
-				2527E0631D27AB830035999F /* Libro.swift */,
+				2527E0631D27AB830035999F /* Libro2.swift */,
 				254372BB1D27C6E000D7AE21 /* Persistencia.xcdatamodeld */,
 			);
 			path = Persistencia;
@@ -148,10 +160,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2527E0621D27AB620035999F /* IsbnVC.swift in Sources */,
+				2526BB681D29140A00B0997E /* Libro+CoreDataProperties.swift in Sources */,
 				2517C4141D27A9DE00BAB087 /* AppDelegate.swift in Sources */,
+				2526BB6B1D29140A00B0997E /* Autor.swift in Sources */,
+				2526BB6A1D29140A00B0997E /* Autor+CoreDataProperties.swift in Sources */,
 				2517C4191D27A9DE00BAB087 /* MasterViewController.swift in Sources */,
-				2527E0641D27AB830035999F /* Libro.swift in Sources */,
+				2527E0641D27AB830035999F /* Libro2.swift in Sources */,
 				254372BD1D27C6E000D7AE21 /* Persistencia.xcdatamodeld in Sources */,
+				2526BB691D29140A00B0997E /* Libro.swift in Sources */,
 				2517C41B1D27A9DE00BAB087 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,10 +281,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Persistencia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ts.Persistencia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -276,6 +294,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Persistencia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ts.Persistencia;

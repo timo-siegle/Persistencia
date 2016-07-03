@@ -10,19 +10,19 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
-    var book : Libro!
+    var book : Libro2!
     
     @IBOutlet weak var isbn: UILabel!
     @IBOutlet weak var titulo: UILabel!
-    @IBOutlet weak var autores: UILabel!
     @IBOutlet weak var imagen: UIImageView!
+    @IBOutlet weak var autores: UILabel!
     
     func configureView() {
         // Update the user interface for the detail item.
         
         isbn.text = book.isbn
         titulo.text = book.titulo
-        autores.text = book.autores?.joinWithSeparator(", ")
+        autores.text = book.autores.joinWithSeparator(", ")
         imagen.image = book.imagen
     }
     
